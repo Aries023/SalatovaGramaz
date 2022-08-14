@@ -3,12 +3,15 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="390.0" prefWidth="615.0" spacing="20.0" style="-fx-background-color: #43A862;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salatovagramaz.HelloController">
+<VBox alignment="CENTER" prefHeight="390.0" prefWidth="615.0" spacing="20.0" style="-fx-background-color: #F6C845;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salatovagramaz.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -20,16 +23,33 @@
       <effect>
          <Blend />
       </effect></Label>
-    <TextField fx:id="numbOfSack" alignment="CENTER" prefHeight="35.0" prefWidth="582.0" style="-fx-background-color: #99FFA8;">
-      <font>
-         <Font size="18.0" />
-      </font></TextField>
-    <Button onAction="#onVelkySal" prefHeight="69.0" prefWidth="126.0" style="-fx-background-color: #F57B7A;" text="Velky šalát">
-      <font>
-         <Font size="14.0" />
-      </font></Button>
-    <Button onAction="#onMalySal" prefHeight="67.0" prefWidth="127.0" style="-fx-background-color: #F57B7A;" text="Záhradný šalát">
-      <font>
-         <Font size="14.0" />
-      </font></Button>
+    <Pane prefHeight="156.0" prefWidth="570.0">
+        <SplitPane dividerPositions="0.2857142857142857" layoutX="-5.0" layoutY="-2.0" prefHeight="154.0"
+                   prefWidth="583.0">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0"
+                        style="-fx-background-color: #F57B7A;">
+                <TextField fx:id="numbOfSack" alignment="CENTER" layoutX="19.0" layoutY="21.0" prefHeight="115.0"
+                           prefWidth="127.0" promptText="zadaj čislo" style="-fx-background-color: #99FFA8;">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </TextField>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="152.0" prefWidth="514.0"
+                        style="-fx-background-color: #43A862;">
+                <Button layoutX="47.0" layoutY="42.0" onAction="#onVelkySal" prefHeight="69.0" prefWidth="126.0"
+                        style="-fx-background-color: #F57B7A;" text="Velky šalát">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="240.0" layoutY="43.0" onAction="#onMalySal" prefHeight="67.0" prefWidth="127.0"
+                        style="-fx-background-color: #F57B7A;" text="Záhradný šalát">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </AnchorPane>
+        </SplitPane>
+    </Pane>
 </VBox>
