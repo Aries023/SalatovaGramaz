@@ -48,18 +48,17 @@
             </AnchorPane>
         </SplitPane>
     </Pane>
-    <Pane prefHeight="31.0" prefWidth="575.0">
-        <ImageView fitHeight="53.0" fitWidth="64.0" layoutX="26.0" layoutY="-13.0">
-            <Image url="@../../../../java/Stufffs/79170020.png"/>
+    <AnchorPane prefHeight="51.0" prefWidth="575.0">
+        <ImageView id="AriLogo" fitHeight="56.0" fitWidth="53.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../79170020.png" />
         </ImageView>
-      <Label layoutX="446.0" layoutY="7.0" prefHeight="17.0" prefWidth="115.0" />
-      <Label layoutX="493.0" layoutY="7.0" prefHeight="17.0" prefWidth="82.0" text="version: 0.4" textAlignment="CENTER" textFill="#a90c21" underline="true">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-        <ImageView fitHeight="53.0" fitWidth="57.0" layoutX="259.0" layoutY="-13.0">
-            <Image url="@../../../../java/Stufffs/logomc.png"/>
+        <ImageView id="McLogo" fitHeight="47.0" fitWidth="56.0" layoutX="264.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../logomc.png" />
         </ImageView>
-    </Pane>
+        <Label layoutX="492.0" layoutY="21.0" prefHeight="17.0" prefWidth="82.0" text="version: 0.4" textAlignment="CENTER" textFill="#a90c21" underline="true">
+           <font>
+               <Font size="13.0" />
+           </font>
+        </Label>
+    </AnchorPane>
 </VBox>
