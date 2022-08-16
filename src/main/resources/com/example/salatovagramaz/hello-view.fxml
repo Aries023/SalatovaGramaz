@@ -15,6 +15,9 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+    <Pane prefHeight="70.0" prefWidth="575.0">
+        <Pane prefHeight="58.0" prefWidth="83.0"/>
+    </Pane>
 
     <Label fx:id="welcomeText" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="440.0" style="-fx-background-color: #7AF58C;" text="zadaj počet sačkov, kolko chceš použiť a klikni ake šaláty chceš spraviť." textAlignment="CENTER" underline="true" wrapText="true">
       <font>
@@ -24,32 +27,29 @@
          <Blend />
       </effect></Label>
     <Pane prefHeight="156.0" prefWidth="570.0">
-        <SplitPane dividerPositions="0.2857142857142857" layoutX="-5.0" layoutY="-2.0" prefHeight="154.0"
-                   prefWidth="583.0">
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0"
-                        style="-fx-background-color: #F57B7A;">
-                <TextField fx:id="numbOfSack" alignment="CENTER" layoutX="19.0" layoutY="21.0" prefHeight="115.0"
-                           prefWidth="127.0" promptText="zadaj čislo" style="-fx-background-color: #99FFA8;">
+        <SplitPane dividerPositions="0.2857142857142857" layoutX="-5.0" layoutY="-2.0" prefHeight="154.0" prefWidth="583.0">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #F57B7A;">
+                <TextField fx:id="numbOfSack" alignment="CENTER" layoutX="19.0" layoutY="21.0" prefHeight="115.0" prefWidth="127.0" promptText="zadaj čislo" style="-fx-background-color: #99FFA8;">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </TextField>
             </AnchorPane>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="152.0" prefWidth="514.0"
-                        style="-fx-background-color: #43A862;">
-                <Button layoutX="47.0" layoutY="42.0" onAction="#onVelkySal" prefHeight="69.0" prefWidth="126.0"
-                        style="-fx-background-color: #F57B7A;" text="Velky šalát">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="152.0" prefWidth="514.0" style="-fx-background-color: #43A862;">
+                <Button layoutX="47.0" layoutY="42.0" onAction="#onVelkySal" prefHeight="69.0" prefWidth="126.0" style="-fx-background-color: #F57B7A;" text="Velky šalát">
                     <font>
-                        <Font size="14.0"/>
+                        <Font size="14.0" />
                     </font>
                 </Button>
-                <Button layoutX="240.0" layoutY="43.0" onAction="#onMalySal" prefHeight="67.0" prefWidth="127.0"
-                        style="-fx-background-color: #F57B7A;" text="Záhradný šalát">
+                <Button layoutX="240.0" layoutY="43.0" onAction="#onMalySal" prefHeight="67.0" prefWidth="127.0" style="-fx-background-color: #F57B7A;" text="Záhradný šalát">
                     <font>
-                        <Font size="14.0"/>
+                        <Font size="14.0" />
                     </font>
                 </Button>
             </AnchorPane>
         </SplitPane>
+    </Pane>
+    <Pane prefHeight="31.0" prefWidth="575.0">
+        <Pane layoutX="451.0" layoutY="-9.0" prefHeight="46.0" prefWidth="110.0"/>
     </Pane>
 </VBox>
